@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 600px;
+        }
+        #page-title{
+            background-color: red;
+            /* padding: 25px; */
+        }
+        #page-sub-title{
+            background-color: orange;
+        }
+        h1{
+            /* border-width: 1px; */
+            /* border-style: dotted; */
+            /* border-color: blue; */
+            border: 1px solid blue;
+            
+        }
+        .kutu{
+            border: 1px solid black;
+            padding: 10px;
+            /* margin: 20px; */
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .kutu1{
+            background-color: aqua;
+        }
+        .kutu-kapsayici{
+            width: 620px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Herhangi bir elementin kapladığı alan;
+    - genişlik için: left border + left padding + context + right padding + right border
+    -> width: 100, border:1px, padding:10px ==> kapladığı genişlik: 122px
+    -> yükseklik için: top border + top padding + context + bottom padding + bottom border
+    -> height: 50, border:1px, padding:10px ==> kapladığı yükseklik: 72px
+    -->
+    <main>
+        <!-- (Semantik element --- anlamsal katkısı var)arama motorlarının örümcek yazılımları dikkate alır ana içerik burada bulunur -->
+        <section>
+            <h1 id="page-title">Welcome to Bright Blog</h1>
+        </section>
+        <section>
+            <h1 id="page-sub-title">Özgür yazılar burada</h1>
+        </section>
+        <div class="kutu-kapsayici">
+            <div class="kutu kutu1">Kutu1</div>
+            <div class="kutu kutu2">Kutu2</div>
+            <div class="kutu kutu3">Kutu3</div>
+            <div class="kutu kutu4">Kutu4</div>
+            <div class="kutu kutu5">Kutu5</div>
+            <div class="kutu kutu6">Kutu6</div>
+        </div>
+
+    </main>
+</body>
+</html>
