@@ -3,74 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-a {
-    text-decoration: none;
+.my-personal-info {
+    display: grid;
+    gap: 25px;    
 }
-
-.nav-menu {
-    height: 55px;
-    background-color: blueviolet;
-}
-
-.brand-menu {
-    padding: 5px;
-    height: 100%;
-}
-
-.brand-icon {
-    margin-left: 10px;
-    height: 100%;
-    width: 40px;
-    font-size: 40px;
-}
-
-.brand-name {
-    width: 125px;
-    font-size: 30px;
-    align-items: center;
+.my-card {
+    position: relative;
+    margin: 0 auto;
+    top: 50px;
+    width: 40%;
+    height: 80vh;
     justify-content: center;
+    align-items: center;
 }
-
-.nav-menu-items {
-    height: 100%;
+.my-card img {
+    padding: 5px;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
 }
-
-.row {
-    width: 100%;
-}
-
-.top-menu-links {
+.my-footer{
     display: flex;
+    background-color: brown;
     width: 100%;
-    height: 100%;
-}
-
-.menu-items {
-    height: 100%;
-}
-
-.menu-items li {
-    list-style: none;
-}
-
-.menu-items li>a {
-    height: 100%;
-    width: 100%;
-    font-size: 30px;
-}
-
-.menu-item {
-    padding: 10px;
-    width: 140px;
-    margin-left: 15px;
-}
-
-.left-col {
-    background-color: aqua;
-    height: 100vh;
-}
-.right-col {
-    background-color: chocolate;
-    height: 100vh;
+    height: 5vh;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    
 }
