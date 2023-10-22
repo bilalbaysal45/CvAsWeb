@@ -1,13 +1,43 @@
+:root {
+    --my-bg: #F9F7F7;
+    --my-menu: #DBE2EF;
+    --my-xx: #3F72AF;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.my-personal-info {
-    display: grid;
-    gap: 25px;    
+
+body {
+    background-color: var(--my-bg);
 }
+
+.my-bg-color {
+    background-color: var(--my-xx) !important;
+}
+
+.my-nav {
+    background-color: var(--my-menu);
+}
+
+.my-personal-info {
+    padding-top: 15px;
+    display: grid;
+    gap: 25px;
+}
+
+.my-card-we {
+    background-color: var(--my-menu);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    border: 1px solid rgba(250, 78, 78, 0.3);
+    margin: 10px 10px;
+}
+
 .my-card {
+    background-color: var(--my-menu);
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
     position: relative;
     margin: 0 auto;
     top: 50px;
@@ -16,20 +46,37 @@
     justify-content: center;
     align-items: center;
 }
+
+.my-list-item {
+    background-color: var(--my-xx) !important;
+    transform: none;
+}
+
+.my-list-item:hover {
+    transform: rotateY(360deg);
+    transition: all 1s;
+}
+
 .my-card img {
     padding: 5px;
     width: 50%;
     height: 50%;
     object-fit: cover;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
 }
-.my-footer{
+
+.my-text {
+    color: var(--my-textcolor) !important;
+}
+
+.my-footer {
     display: flex;
-    background-color: brown;
+    background-color: var(--my-menu);
     width: 100%;
     height: 5vh;
     position: fixed;
     bottom: 0;
     justify-content: center;
     align-items: center;
-    
+
 }
